@@ -1,33 +1,18 @@
-/* Universal selector */
-*{
-    color: red;
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    /* border-style: dashed; */
+    padding: 10px 5px;
+    text-align: center;
+}
+table{
+    width: 100%;
+}
+th{
+    background-color: lightblue;
 }
 
-/* tag selector */
-p{
-    color: blue;
-}
-
-/* class selector */
-.para{
-    color: pink;
-}
-:hover{
-    color: aqua;
-}
-
-/* pseudo-element selector - 1 */
-p::first-line{
-    color: cyan;
-}
-
-/* attribute selector */
-a[href="#"]{
-    color: violet;
-}
-
-/* id-selector - 100*/
-#id{
-    /* 10,000 specificity */
-    color: blueviolet !important; 
+/* pseudo class */
+tr:nth-child(even){
+    background-color: lightgrey;
 }
